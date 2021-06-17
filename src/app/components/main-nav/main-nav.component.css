@@ -1,0 +1,89 @@
+/*
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 200px;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.spacer {
+  flex: 1 1 auto;
+}
+*/
+
+#MainBody{
+  background-color: #F2F2F2;
+  min-height: calc(100vh - 85px);
+  width: 100vw;
+}
+
+nav{
+  width: 100vw;
+  height: 85px;
+  background-color: #272930;
+  padding: 0px 8%;
+  color: white;
+  
+  display: flex;
+}
+nav .nav-element{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav .nav-brand{
+  width: 255px;;
+}
+nav .nav-menu{
+  width: calc(100% - 510px);
+}
+nav .nav-user{
+  width: 255px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+nav .nav-user button{
+  color: white;
+  border: none;
+  height: 32px;
+  width: 100px;
+  outline: none;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: .8px;
+  border-radius: 4px;
+  font-family: 'Roboto', sans-serif;
+
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.3s;
+}
+nav .nav-user button:hover{
+  cursor: pointer;
+  background-color: #f05555;
+}
+nav .nav-user .login{
+  background-color: #2d6ff7;
+}
+nav .nav-user .register{
+  background-color: #7c7f85;
+}
+
+
+
+nav .nav-brand a{
+  font-size: 26px;
+  text-decoration: none;
+  color: white;
+}

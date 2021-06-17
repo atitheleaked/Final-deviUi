@@ -1,0 +1,17 @@
+<div class="container">
+  <h1>{{uye?.KullaniciAdi}} Adlı Üyeye Ait Makaleler</h1>
+  <h3 style="color:red" *ngIf="makaleler?.length==0">Henüz Bu Üye Makale Eklenmedi!</h3>
+  <div *ngFor="let makale of makaleler">
+    <h2>{{makale.Baslik}}</h2>
+    <p>
+      <b>Kategori : </b> {{makale.KategoriAdi}} &nbsp;&nbsp;
+      <b>Tarih : </b> {{makale.Tarih}}&nbsp;&nbsp;
+      <b>Yazan : </b> {{makale.UyeKadi}}&nbsp;&nbsp;
+      <a href="#" [routerLink]="['/makale',makale.MakaleId]">Makale Oku</a>
+
+    </p>
+    <hr>
+  </div>
+
+
+</div>

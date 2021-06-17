@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');,
+
+*{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+#MainFeed{
+    min-height: 50px;
+    background-color: white;
+    border-radius: 3px;
+}
+.gry-brdr{
+    border: solid 1px #e1e3e3;
+}

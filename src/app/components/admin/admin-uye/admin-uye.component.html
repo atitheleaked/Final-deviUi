@@ -1,0 +1,51 @@
+
+
+
+<div class="container">
+  <h2>Üyeler</h2>
+  
+  <p>&nbsp;</p>
+
+
+  <div class="col-6 offset-3">
+    <table style="width: 100%;">
+      <thead>
+        <tr>
+          <td>Ad Soyad</td>
+          <td>Kullanici Adi</td>
+          <td>E mail</td>
+          <td>Sil</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let uye of uyeler" >
+          <td>{{uye.AdSoyad}}</td>
+          <td>{{uye.KullaniciAdi}}</td>
+          <td>{{uye.Email}}</td>
+          <td><button (click)="Sil(uye)" class="btn btn-outline-danger" >Sil</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<style>
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+  }
+  thead tr td{
+    font-weight: bold;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 16px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  </style>
